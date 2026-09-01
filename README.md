@@ -548,7 +548,7 @@ show port-security interface fa0/1
 
 ---
 
-# 💼 Resume Description
+# Resume Description
 
 **Secure Multi-Branch Corporate Network | Cisco Packet Tracer**
 
@@ -560,7 +560,7 @@ show port-security interface fa0/1
 
 ---
 
-# 🎤 Interview Explanation
+# Interview Explanation
 
 ### "Tell me about your project."
 
@@ -576,7 +576,7 @@ show port-security interface fa0/1
 
 ---
 
-# ⭐ Key Skills Demonstrated
+# Key Skills Demonstrated
 
 ```text
 Networking
@@ -601,22 +601,22 @@ Tools
 
 ---
 
-# 📌 Project Status
+# Project Status
 
 ```text
-Architecture       ✅
-VLANs              ✅
-Subnetting         ✅
-Inter-VLAN Routing ✅
-WAN                ✅
-OSPF               ✅
-DHCP               ✅
-ACL Security       🔄
-SSH                🔄
-Port Security      🔄
-Server             🔄
-Testing             🔄
-Documentation      🔄
+Architecture       
+VLANs              
+Subnetting         
+Inter-VLAN Routing 
+WAN                
+OSPF               
+DHCP               
+ACL Security       
+SSH                
+Port Security     
+Server             
+Testing             
+Documentation      
 ```
 
 > **Note:** Mark the remaining items as complete in GitHub only after you actually configure and test them in Packet Tracer.
