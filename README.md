@@ -1,4 +1,4 @@
-# 🔐 Secure Multi-Branch Corporate Network
+# Secure Multi-Branch Corporate Network
 
 ## TechNova Solutions
 
@@ -8,7 +8,7 @@ The project addresses common enterprise networking problems such as flat network
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 TechNova Solutions has two offices:
 
@@ -35,7 +35,7 @@ The original flat network allowed devices from different departments to communic
 
 ---
 
-# 🎯 Project Objectives
+# Project Objectives
 
 The main objectives of this project are:
 
@@ -52,7 +52,7 @@ The main objectives of this project are:
 
 ---
 
-# 🏗️ Network Architecture
+# Network Architecture
 
 ```text
                          TECHNOVA SOLUTIONS
@@ -79,7 +79,7 @@ VLAN 40 → Guest
 
 ---
 
-# 🖥️ Technologies Used
+# Technologies Used
 
 | Technology          | Purpose                    |
 | ------------------- | -------------------------- |
@@ -98,7 +98,7 @@ VLAN 40 → Guest
 
 ---
 
-# 🌐 IP Addressing Plan
+# IP Addressing Plan
 
 ## Head Office
 
@@ -129,7 +129,7 @@ BR-R1 → 10.0.0.2
 
 ---
 
-# 🔀 VLAN Design
+# VLAN Design
 
 ### VLAN 10 — HR
 
@@ -167,7 +167,7 @@ The Guest VLAN is isolated from internal corporate networks using ACL policies.
 
 ---
 
-# 🚦 Routing Architecture
+# Routing Architecture
 
 Inter-VLAN routing is implemented using **Cisco 3560 multilayer switches**.
 
@@ -188,7 +188,7 @@ The two branch routers are connected through a WAN serial link.
 
 ---
 
-# 🔐 Security Design
+# Security Design
 
 Security is one of the primary goals of this project.
 
@@ -205,19 +205,19 @@ ACL policies are designed to:
 Example security model:
 
 ```text
-Guest → HR        ❌ DENY
-Guest → Finance   ❌ DENY
-Guest → IT        ❌ DENY
-Guest → Server    ❌ DENY
+Guest → HR        DENY
+Guest → Finance   DENY
+Guest → IT        DENY
+Guest → Server    DENY
 
-HR → Finance      ✅ ALLOW
-IT → Finance      ✅ ALLOW
-IT → Server       ✅ ALLOW
+HR → Finance      ALLOW
+IT → Finance      ALLOW
+IT → Server       ALLOW
 ```
 
 ---
 
-# 🔑 SSH Security
+# SSH Security
 
 Network-device management is secured using SSH instead of Telnet.
 
@@ -236,7 +236,7 @@ SSH-only access
 
 ---
 
-# 🛡️ Port Security
+# Port Security
 
 Port security is enabled on access ports to restrict unauthorized devices.
 
@@ -253,7 +253,7 @@ This helps prevent unauthorized devices from being connected to corporate access
 
 ---
 
-# 🖥️ DHCP
+# DHCP
 
 DHCP is configured separately for each VLAN.
 
@@ -280,7 +280,7 @@ DHCP automatically provides:
 
 ---
 
-# 🗄️ Internal IT Server
+# Internal IT Server
 
 An internal server is placed inside the IT VLAN.
 
@@ -296,7 +296,7 @@ HTTP/FTP services can be enabled to demonstrate access-control policies.
 
 ---
 
-# 🧪 Network Verification
+# Network Verification
 
 The following Cisco IOS commands are used to verify the configuration:
 
@@ -358,27 +358,27 @@ show ip ssh
 
 ---
 
-# 🧪 Testing Scenarios
+# Testing Scenarios
 
 The following tests are performed in Cisco Packet Tracer.
 
 | Test                                | Expected Result |
 | ----------------------------------- | --------------- |
-| HR → Finance                        | ✅ Allowed       |
-| IT → Finance                        | ✅ Allowed       |
-| IT → Internal Server                | ✅ Allowed       |
-| Guest → HR                          | ❌ Blocked       |
-| Guest → Finance                     | ❌ Blocked       |
-| Guest → IT                          | ❌ Blocked       |
-| Guest → Internal Server             | ❌ Blocked       |
-| Head Office → Branch Office         | ✅ Allowed       |
-| Branch Office → Head Office         | ✅ Allowed       |
-| SSH administration                  | ✅ Allowed       |
-| Unauthorized device on secured port | ❌ Restricted    |
+| HR → Finance                        | Allowed       |
+| IT → Finance                        | Allowed       |
+| IT → Internal Server                | Allowed       |
+| Guest → HR                          | Blocked       |
+| Guest → Finance                     | Blocked       |
+| Guest → IT                          | Blocked       |
+| Guest → Internal Server             | Blocked       |
+| Head Office → Branch Office         | Allowed       |
+| Branch Office → Head Office         | Allowed       |
+| SSH administration                  | Allowed       |
+| Unauthorized device on secured port | Restricted    |
 
 ---
 
-# 📊 Before vs After
+# Before vs After
 
 ## Before
 
@@ -394,11 +394,11 @@ The following tests are performed in Cisco Packet Tracer.
 
 ### Problems
 
-❌ No segmentation
-❌ Poor security
-❌ Large broadcast domain
-❌ Guest can access internal resources
-❌ No department-level control
+No segmentation
+Poor security
+Large broadcast domain
+Guest can access internal resources
+No department-level control
 
 ---
 
@@ -424,19 +424,19 @@ The following tests are performed in Cisco Packet Tracer.
 
 ### Improvements
 
-✅ VLAN segmentation
-✅ Reduced broadcast domains
-✅ Controlled inter-VLAN communication
-✅ Guest isolation
-✅ Dynamic routing
-✅ Secure SSH management
-✅ Port security
-✅ Automatic DHCP addressing
-✅ Scalable architecture
+VLAN segmentation
+Reduced broadcast domains
+Controlled inter-VLAN communication
+Guest isolation
+Dynamic routing
+Secure SSH management
+Port security
+Automatic DHCP addressing
+Scalable architecture
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 Recommended GitHub repository structure:
 
@@ -478,7 +478,7 @@ secure-multi-branch-corporate-network/
 
 ---
 
-# 📸 Recommended Screenshots
+# Recommended Screenshots
 
 Add screenshots showing:
 
